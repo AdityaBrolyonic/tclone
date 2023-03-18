@@ -1,0 +1,67 @@
+
+.BoxText{
+    padding-top:5vh;
+    text-align : center;
+    }
+
+.Heading
+{ font-size: 7vh;}
+
+.Line
+{ font-size: 3.5vh;}
+
+.Button
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;;
+    @media (max-width : 768px) {
+        flex-direction:column
+    }
+}
+
+.Left
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 37px;
+    width: 270px;
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.92);
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    margin: 8px;
+    opacity: 0.9;
+}
+ 
+.Right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 37px;
+    width: 270px;
+    cursor: pointer;
+    color: rgb(40, 40, 40);
+    background-color:rgba(255, 255, 255, 0.614);
+    border-radius: 5px;
+    margin: 8px;
+    opacity: 0.9;
+}
+
+.Arrow
+{   
+    cursor: pointer;
+    display: none;
+    overflow-x: hidden;
+    animation: animateDown infinite 1.5s;
+}
+
+@media (max-width : 768px) {
+.Arrow{
+    display: block;
+}}
